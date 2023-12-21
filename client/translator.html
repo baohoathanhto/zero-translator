@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Zero Translator</title>
+  <link rel='stylesheet' href='../api/client/bootstrap.min.css'>
+  <link rel='stylesheet' href='./style.css'>
+  <script type='text/javascript' src='../api/client/bootstrap.min.js'></script>
+</head>
+
+<body>
+  <div class="zero-container">
+    <div class="row">
+      <div class="col">
+        <nav>
+          <div class="nav nav-pills" id="pills-tab" role="tablist">
+            <button type="button" class="nav-link active" id="nav-trung-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-trung" role="tab" aria-controls="nav-trung" aria-selected="true">Tiếng Trung</button>
+            <button type="button" class="nav-link" id="nav-han-tab" data-bs-toggle="tab" data-bs-target="#nav-han"
+              type="button" role="tab" aria-controls="nav-han" aria-selected="false">Hán Việt</button>
+            <button type="button" class="nav-link" id="nav-viet-tab" data-bs-toggle="tab" data-bs-target="#nav-viet"
+              type="button" role="tab" aria-controls="nav-viet" aria-selected="false">Tiếng Việt</button>
+          </div>
+        </nav>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-success" id="btn-translate" onclick="translate()">Translate</button>&nbsp;
+        <button type="button" class="btn btn-warning" id="btn-update" data-bs-toggle="modal"
+          data-bs-target="#modal-update-words" data-bs-whatever="whatever" disabled>Update</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="tab-content" id="nav-tabContent">
+          <textarea class="tab-pane fade show active zero-navtext" role="tabpanel" aria-labelledby="nav-trung-tab"
+            spellcheck="false" id="nav-trung"></textarea>
+          <textarea class="tab-pane fade zero-navtext" role="tabpanel" aria-labelledby="nav-han-tab" id="nav-han"
+            spellcheck="false" readonly></textarea>
+          <textarea class="tab-pane fade zero-navtext" role="tabpanel" aria-labelledby="nav-viet-tab" id="nav-viet"
+            spellcheck="false" readonly></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row z-mt-20">
+      <div class="col">
+        <textarea class="zero-highlight" id="nav-highlight-han" readonly></textarea>
+      </div>
+      <div class="col">
+        <textarea class="zero-highlight" id="nav-highlight-viet" readonly></textarea>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./translator.js"></script>
+</body>
+
+</html>

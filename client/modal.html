@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Bootstrap 5: Modal</title>
+    <link rel='stylesheet' href='../api/client/bootstrap.min.css'>
+    <link rel='stylesheet' href='./style.css'>
+    <script type='text/javascript' src='../api/client/bootstrap.min.js'></script>
+</head>
+
+<body>
+    <div class="zero-container">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Open modal for @mdo</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@fat">Open modal for @fat</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scrollable modal -->
+    <div class="zero-container">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+            data-bs-whatever="zzz">Open Scrollable modal</button>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Lorem Ipsum</h1>
+                    <h5>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                    </h5>
+                    <h6>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because
+                        it is pain..."</h6>
+                    <hr>
+                    <div id="lipsum">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id dolor
+                            accumsan, ornare elit in, mollis nisi. Nam eu magna a augue cursus euismod. Aliquam
+                            ullamcorper laoreet porta. Donec rhoncus suscipit tortor, efficitur volutpat leo
+                            ullamcorper quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed
+                            tincidunt eget lacus at gravida. Phasellus finibus faucibus elit, at commodo leo
+                            hendrerit id. Aliquam egestas ex nec venenatis tristique. Suspendisse ultricies,
+                            nisl vel luctus hendrerit, mauris sapien ultrices lacus, sagittis finibus nisl metus
+                            id nulla. Nullam dolor arcu, rutrum et libero vel, laoreet pellentesque nulla.
+                            Suspendisse potenti.
+                        </p>
+                        <p>
+                            Praesent risus magna, hendrerit eget eros eget, dignissim semper neque. Aliquam erat
+                            volutpat. Nam sed consectetur dolor. Etiam fringilla sit amet diam vitae sagittis.
+                            Fusce vestibulum dictum felis, nec hendrerit justo eleifend eu. Etiam rhoncus justo
+                            ex, at varius turpis egestas sed. Fusce quis erat dolor. Morbi imperdiet volutpat
+                            elit, eget sodales erat tristique in.
+                        </p>
+                        <p>
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus. Cras vitae elit vel lacus ultricies lobortis. Quisque aliquet nisl sed nibh
+                            lobortis, non convallis arcu mollis. Fusce a augue at augue finibus dictum vitae sed
+                            tortor. Fusce quis rhoncus lorem. Curabitur malesuada mattis mauris congue sagittis.
+                            Suspendisse potenti. Donec efficitur consequat mauris, ut hendrerit erat sagittis
+                            eget. Nunc dictum nulla metus, id convallis lectus congue ac. Etiam ligula ante,
+                            lacinia ac auctor ut, lacinia eu neque. Ut eget elementum ipsum. Phasellus a mauris
+                            est. Integer nec interdum nunc. Aliquam ullamcorper vulputate ex, ac sagittis quam
+                            bibendum ut.
+                        </p>
+                        <p>
+                            Ut vestibulum tincidunt risus vitae sodales. Fusce nec pharetra magna. Maecenas
+                            sollicitudin venenatis vestibulum. Sed felis ante, lobortis ac arcu eget,
+                            pellentesque scelerisque lacus. Mauris fermentum dui non augue accumsan ullamcorper.
+                            Ut vestibulum eget eros sit amet volutpat. Aenean fringilla congue ultricies. Aenean
+                            sit amet sem ut lacus molestie eleifend at vel tortor. Sed vulputate lacus quis
+                            libero euismod, ac elementum ipsum luctus. Pellentesque condimentum mollis massa, in
+                            pharetra metus blandit vitae. Duis lacinia felis id fringilla ultricies. Praesent
+                            non imperdiet lectus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                            ultrices posuere cubilia curae; Quisque vitae urna justo.
+                        </p>
+                        <p>
+                            Quisque maximus ex non risus cursus euismod. Maecenas id tincidunt erat, non posuere
+                            enim. Phasellus gravida purus quis lectus dapibus, in molestie magna pulvinar. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Proin id nulla id dolor mattis
+                            iaculis. Vestibulum quis nunc lobortis, tincidunt libero et, tempus purus. Sed eget
+                            diam eu libero faucibus euismod non et nibh. Aliquam at convallis libero. Mauris
+                            iaculis ante erat, non malesuada nibh dignissim nec. Aliquam ut eros commodo, tempus
+                            lacus at, vehicula ex. Phasellus quis elementum felis.
+                        </p>
+                    </div>
+                    <div id="generated">Generated 5 paragraphs, 434 words, 2981 bytes of <a
+                            href="https://www.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var exampleModal = document.getElementById('exampleModal')
+        exampleModal.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            var button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            var recipient = button.getAttribute('data-bs-whatever')
+            // If necessary, you could initiate an AJAX request here
+            // and then do the updating in a callback.
+            //
+            // Update the modal's content.
+            var modalTitle = exampleModal.querySelector('.modal-title')
+            var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+            modalTitle.textContent = 'New message to ' + recipient
+            modalBodyInput.value = recipient
+        })
+    </script>
+</body>
+
+</html>

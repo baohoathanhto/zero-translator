@@ -1,0 +1,22 @@
+{
+  "name": "zero-translator",
+  "version": "1.0.0",
+  "description": "A translation tool from Chinese to Vietnamese.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baohoathanhto/zero-translator.git"
+  },
+  "keywords": [
+    "zzz"
+  ],
+  "author": "Bảo Hoa Thánh Tổ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baohoathanhto/zero-translator/issues"
+  },
+  "homepage": "https://github.com/baohoathanhto/zero-translator#readme"
+}

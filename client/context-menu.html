@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Bootstrap 4: Context Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='./style.css'>
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.6.4/jquery.contextMenu.min.js"></script>
+    <style>
+        .context-menu-list {
+            box-shadow: none;
+            border: 1px solid #f3f3f3;
+        }
+
+        .context-menu-list {
+            position: absolute;
+            display: inline-block;
+            min-width: 13em;
+            max-width: 26em;
+            padding: 0.25em 0;
+            margin: 0.3em;
+            font-family: inherit;
+            font-size: inherit;
+            list-style-type: none;
+            background: #fff;
+            border: 1px solid #bebebe;
+            border-radius: 0.2em;
+            -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .context-menu-item {
+            position: relative;
+            padding: 0.5em 6em;
+            color: #2f2f2f;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: #fff;
+        }
+
+        .context-menu-list .context-menu-item.context-menu-hover {
+            background-color: black;
+            color: #fff;
+        }
+
+        .context-menu-separator {
+            padding: 0;
+            margin: 0.35em 0;
+            border-bottom: 1px solid #e6e6e6;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        (function ($) {
+            'use strict';
+            $.contextMenu({
+                selector: '#context-menu-simple',
+                callback: function (key, options) { },
+                items: {
+                    "edit": {
+                        name: "Edit",
+                    },
+                    "cut": {
+                        name: "Cut",
+                        icon: "cut"
+                    },
+                    copy: {
+                        name: "Copy",
+                        icon: "copy"
+                    },
+                    "paste": {
+                        name: "Paste",
+                        icon: "paste"
+                    },
+                    "delete": {
+                        name: "Delete",
+                        icon: "delete"
+                    },
+                    "sep1": "---------",
+                    "quit": {
+                        name: "Quit",
+                        icon: function () {
+                            return 'context-menu-icon context-menu-icon-quit';
+                        }
+                    }
+                }
+            });
+        })(jQuery);
+    </script>
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            <div class="row container d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Context menu</h4>
+                            <p class="card-description"> An example of context menu </p>
+                            <div class="card card-inverse-info" id="context-menu-simple">
+                                <div class="card-body">
+                                    <p class="card-text"> Right click somewhere in this colored area for simple context
+                                        menu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function ($) {
+            'use strict';
+            $.contextMenu({
+                selector: '#context-menu-hover-autohide',
+                trigger: 'hover',
+                delay: 500,
+                autoHide: true,
+                callback: function (key, options) {
+                    var m = "clicked: " + key;
+                    window.console && console.log(m) || alert(m);
+                },
+                items: {
+                    "edit": {
+                        name: "Edit",
+                        icon: "edit"
+                    },
+                    "cut": {
+                        name: "Cut",
+                        icon: "cut"
+                    },
+                    "copy": {
+                        name: "Copy",
+                        icon: "copy"
+                    },
+                    "paste": {
+                        name: "Paste",
+                        icon: "paste"
+                    },
+                    "delete": {
+                        name: "Delete",
+                        icon: "delete"
+                    },
+                    "sep1": "---------",
+                    "quit": {
+                        name: "Quit",
+                        icon: function ($element, key, item) {
+                            return 'context-menu-icon context-menu-icon-quit';
+                        }
+                    }
+                }
+            });
+        })(jQuery);
+    </script>
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            <div class="row container d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Menu on hover with auto-hide</h4>
+                            <p class="card-description"> Context menu with hide/show on louse in/out </p>
+                            <div class="card card-inverse-primary" id="context-menu-hover-autohide">
+                                <div class="card-body">
+                                    <p class="card-text"> Hover here for context menu and mouse out for hiding</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
