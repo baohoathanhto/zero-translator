@@ -49,6 +49,10 @@ node index
 
 For more detailed usage instructions and options, refer to the [documentation](docs/README.md).
 
+## Example
+
+![GUI Translator Screenshot](screenshot.png)
+
 ### Contributing
 
 Contributions are welcome! Please refer to the [Contribution Guidelines](CONTRIBUTING.md) for more information.
