@@ -15,7 +15,7 @@ Zero Translator is a GUI application for translating text using a local API and 
 - **Live Translation Updates:** Zero Translator currently does not support live updating text within the GUI. However, this feature is in active development and will soon allow users to instantly see translations as they type, providing a seamless and dynamic translation experience. Stay tuned for updates!
 - If you have any ideas or suggestions, feel free to let us know! Your feedback is invaluable in shaping the future of Zero Translator.
 
-### Installation Steps
+## Installation Steps
 
 1. Clone the repository:
 
@@ -35,9 +35,9 @@ Zero Translator is a GUI application for translating text using a local API and 
    npm install
    ```
 
-### Usage
+## Usage
 
-#### Graphical User Interface
+### Graphical User Interface
 
 You can use the Zero Translator GUI application to translate text using a graphical interface.
 
@@ -53,10 +53,10 @@ For more detailed usage instructions and options, refer to the [documentation](d
 
 ![GUI Translator Screenshot](screenshot.png)
 
-### Contributing
+## Contributing
 
 Contributions are welcome! Please refer to the [Contribution Guidelines](CONTRIBUTING.md) for more information.
 
-### License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
