@@ -49,7 +49,7 @@ node index
 
 For more detailed usage instructions and options, refer to the [documentation](docs/README.md).
 
-## Example
+## Screenshot
 
 ![GUI Translator Screenshot](screenshot.png)
 
