@@ -10,6 +10,11 @@ Zero Translator is a GUI application for translating text using a local API and 
 - Uses data from multiple CSV files to translate texts in bulk.
 - Provides a simple graphical user interface for easy translation tasks.
 
+## Missing Features
+
+- **Live Translation Updates:** Zero Translator currently does not support live updating text within the GUI. However, this feature is in active development and will soon allow users to instantly see translations as they type, providing a seamless and dynamic translation experience. Stay tuned for updates!
+- If you have any ideas or suggestions, feel free to let us know! Your feedback is invaluable in shaping the future of Zero Translator. Stay tuned for updates!
+
 ### Installation Steps
 
 1. Clone the repository:
